@@ -1,7 +1,8 @@
 import React from "react";
 
 const Counter = props =>
-  <div className={`counter`}>
+
+  <div className={"counter"}>
     {props.children}
   </div>;
 
