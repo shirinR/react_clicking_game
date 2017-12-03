@@ -1,5 +1,4 @@
 import React from "react";
-// import "./ContainerHeader.css"
 
 const ContainerHeader = () =>
   <h1 className="game_title"> Clicky Game </h1>;

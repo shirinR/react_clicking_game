@@ -8,6 +8,7 @@ import ContainerHeader from "./ContainerHeader";
 import Zb from "./images/Zb.png";
 import Auroranew from "./images/Auroranew.jpg";
 import Cinderellanewpic from "./images/Cinderellanewpic.jpg";
+import Snowwhitenew from "./images/Snowwhitenew.jpg"
 
 class CardContainer extends Component {
   state = {
@@ -49,18 +50,20 @@ class CardContainer extends Component {
         </ContainerHeader>
 
         <Container>
-
             <PlaceHolders>
               <img src={Zb} alt={"ZB"} id={0}  height={"242"} width={"190"} onClick={() => this.handleClick(this)}/>
               <div>The number is: {this.state.random}</div>
             </PlaceHolders>
 
-
             <PlaceHolders>
-              <img src={Auroranew} alt={"Auroranew"} id={1} height={"242"} width={"190"} />
+              <img src={Auroranew} alt={"Auroranew"} id={1} height={"242"} width={"190"}/>
             </PlaceHolders>
             <PlaceHolders>
               <img src={Cinderellanewpic} alt={"Cinderellanewpic"} id={2} height={"242"} width={"190"}/>
+            </PlaceHolders>
+
+            <PlaceHolders>
+              <img src={Snowwhitenew} alt={"Snowwhitenew"} id={3} height={"242"} width={"190"}/>
             </PlaceHolders>
         </Container>
       </div>
