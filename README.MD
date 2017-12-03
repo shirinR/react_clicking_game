@@ -20,9 +20,5 @@ For this assignment, you'll create a memory game with React. This assignment wil
 
 7. When complete, the application should be deployed to Github Pages. See the README generated with Create React App for instructions on deploying the application to Github Pages.
 
-#### Hints
-
-* Begin by building a non-functioning static version for your Clicky Game. Then work on making the game interactive.
-
 
 Coding Boot Camp (C) 2016. All Rights Reserved.
