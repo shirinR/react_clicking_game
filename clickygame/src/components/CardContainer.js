@@ -12,12 +12,10 @@ import Snowwhitenew from "./images/Snowwhitenew.jpg"
 
 class CardContainer extends Component {
   state = {
-    id: "",
     guesses: "",
     score:"",
     result: "",
     random: 0
-    // myPic: ["Zb", "Auroranew", "Cinderellanewpic"]
   };
 
   constructor(props) {
@@ -26,19 +24,12 @@ class CardContainer extends Component {
     this.state = { random: 0 };
   }
 
-  handleclickItems= (ev) => {
-    this.handleclickItems((ev))
-      .then(res => this.setState({ result: res.data }))
-      .catch(err => console.log(err));
-  };
-
-  handleClick() {
+  handleClick(id) {
    const min = 1;
    const max = 3;
    let rand = Math.floor(Math.random() * (max - min));
 
    this.setState({ random: this.state.random + rand });
-
  }
 
   render() {
@@ -51,7 +42,7 @@ class CardContainer extends Component {
 
         <Container>
             <PlaceHolders>
-              <img src={Zb} alt={"ZB"} id={0}  height={"242"} width={"190"} onClick={() => this.handleClick(this)}/>
+              <img src={Zb} alt={"ZB"} id={0}  height={"242"} width={"190"} onClick={(ev) => this.handleClick(ev.target.id)}/>
               <div>The number is: {this.state.random}</div>
             </PlaceHolders>
 
